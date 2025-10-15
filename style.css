@@ -7,6 +7,9 @@ body{
     background-color: var(--primary-color);
     padding: 70px;
     font-family: righteous, sans-serif;
+    display: flex;
+    flex-direction: column;
+
 }
 header{
     display: flex;
@@ -16,4 +19,71 @@ header{
 header span{
     font-size: 32px;
     color: var(--secundary-color);
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+footer{
+    color: var(--secundary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    font-size: 300px;
+    color: white;
+    z-index: -995;
+
+}
+.container{
+    height: 154px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 64px;
+}
+.descricao h2{
+    font-size: 64px;
+    color: var(--secundary-color);
+
+}
+.descricao p{
+    font-size: 20px;
+    color: var(--secundary-color);
+    width: 489px;
+}
+.container a{
+    width: 400px;
+    height: 100px;
+    background-color: var(--secundary-color);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    color: white;
+}
+.sombra{
+    font-size: 500px;
+    position: absolute;
+    color: #ffffff5f;
+    z-index: -999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-80%)
+
+
+}
+.pikachu{
+    position: absolute;
+    display: flex;
+    z-index: -900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-40%)
 }
