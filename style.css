@@ -36,9 +36,10 @@ h1{
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    font-size: 300px;
+    font-size: 18vw;
     color: white;
     z-index: -995;
+
 
 }
 .container{
@@ -69,13 +70,13 @@ h1{
     color: white;
 }
 .sombra{
-    font-size: 500px;
+    font-size: 22vw;
     position: absolute;
     color: #ffffff5f;
     z-index: -999;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-80%)
+    transform: translate(-50%,-85%)
 
 
 }
@@ -86,4 +87,47 @@ h1{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-40%)
+}
+
+/*tablet*/
+@media (max-width: 768px){
+    body{
+        padding: 30px;
+        background-color: tomato;
+    }
+    footer {
+        display: none;
+    }
+    h1{
+        align-items: start;
+        transform: translateY(10%);
+        flex-grow: 1.2;
+    }
+   
+    .container{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        height: auto;
+        padding:0;
+    }
+    .descricao p{
+        text-align: center;
+    }
+    .pikachu{
+        transform: translate(-50,-100);
+    }
+    .sombra{
+        display: flex;
+        transform: translate(-50%, -220%);
+    }
+   
+    
+}
+
+/*MOBILE*/
+@media(max-width: 480px){
+    body{
+        background-color: pink;
+    }
 }
