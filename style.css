@@ -68,6 +68,7 @@ h1{
     align-items: center;
     font-size: 48px;
     color: white;
+    border-radius: 3px;
 }
 .sombra{
     font-size: 22vw;
@@ -115,11 +116,11 @@ h1{
         text-align: center;
     }
     .pikachu{
-        transform: translate(-50,-100);
+        transform: translate(-50%,-50%);
     }
     .sombra{
         display: flex;
-        transform: translate(-50%, -220%);
+        transform: translate(-50%, -210%);
     }
    
     
@@ -127,7 +128,26 @@ h1{
 
 /*MOBILE*/
 @media(max-width: 480px){
+    .descricao p{
+        display: none;
+    }
+    .descricao h2{
+        font-size: 42px;
+        width: 350px;
+    }
     body{
         background-color: pink;
     }
+    .container a{
+        width: 100%;
+
+    }
+    .pikachu{
+        height: 380px;
+    }
+    .sombra{
+        transform:translate(-50%, -300%)
+        
+    }
+
 }
